@@ -1,0 +1,109 @@
+footer {
+	background-color: #f8f9fa;
+	padding: 10px 20px;
+	text-align: center;
+	border-bottom: 1px solid #ddd;
+}
+
+footer div {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+footer div div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+footer div div p, footer div div p a {
+	margin: 5px 0;
+}
+
+footer div div p a {
+	color: #007bff;
+	text-decoration: none;
+}
+
+footer div div p a:hover {
+	text-decoration: underline;
+}
+
+footer address {
+	max-width: 80rem;
+	display: flex;
+	align-items: center;
+	pointer-events: none;
+}
+
+footer address:hover {
+	pointer-events: auto;
+}
+
+footer address h4 {
+	font-size: 2.6rem;
+	text-transform: uppercase;
+	cursor: pointer;
+	pointer-events: auto;
+}
+
+footer address div {
+	width: 15rem;
+	height: 3px;
+	background-color: #97DB3A;
+	margin-left: 2rem;
+	margin-right: auto;
+	transform: scaleX(0.2);
+	transform-origin: left;
+	transition: transform 0.5s;
+}
+
+footer address:hover div {
+	transform: scaleX(1);
+}
+
+footer address ul {
+	display: flex;
+	list-style: none;
+}
+
+footer address ul li {
+	margin-inline: 2.5rem;
+	opacity: 0;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+footer address ul li:nth-child(odd) {
+	transform: translateY(5rem);
+}
+
+footer address ul li:nth-child(even) {
+	transform: translateY(-5rem);
+}
+
+footer address:hover ul li {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+footer address ul li a {
+	font-size: 3.6rem;
+}
+
+/* footer address ul li a i {
+	transition: color 0.5s;
+	color: #09B5E5;
+} */
+/* footer address ul li a img { NAO FUNCIONA COM A TAG img
+	transition: color 0.5s;
+	color: #09B5E5;
+} */
+
+/* footer address ul li a:hover i {
+	color: #5CBC00;
+} */
+/* footer address ul li a:hover img { NAO FUNCIONA COM A TAG img
+	color: #5CBC00;
+} */
