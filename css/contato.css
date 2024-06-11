@@ -38,6 +38,10 @@ main div:nth-child(1) div section:nth-child(3) ul {
 	justify-content: space-evenly;
 }
 
+main div:nth-child(1) div section:nth-child(3) ul li a {
+	text-decoration: none;
+}
+
 main div:nth-child(1) div form {
 	margin: 2vw;
 }
@@ -85,11 +89,6 @@ main div:nth-child(1) figure {
 	align-items: center;
 }
 
-
-
-
-
-
 main div:nth-child(2) {
 	background-color: #6B9194;
 	display: flex;
@@ -98,7 +97,6 @@ main div:nth-child(2) {
 	padding: 5%;
 }
 
-
 .card {
 	position: relative;
 	width: 350px;
@@ -106,6 +104,7 @@ main div:nth-child(2) {
 	background-color: #000;
 	overflow: hidden;
 }
+
 .card__image {
 	display: block;
 	max-width: 100%;
@@ -115,10 +114,12 @@ main div:nth-child(2) {
 	scale: 1.15;
 	transition: opacity 0.25s, scale 0.35s;
 }
+
 .card:hover .card__image {
 	opacity: 0.5;
 	scale: 1;
 }
+
 .card__body {
 	position: absolute;
 	inset: 0;
@@ -131,6 +132,7 @@ main div:nth-child(2) {
 	row-gap: 15px;
 	justify-content: center;
 }
+
 .card__body::before {
 	content: '';
 	position: absolute;
@@ -140,15 +142,18 @@ main div:nth-child(2) {
 	scale: 1.25;
 	transition: opacity 0.25s, scale 0.25s;
 }
+
 .card:hover .card__body::before {
 	opacity: 1;
 	scale: 1;
 }
+
 .card__title {
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
 }
+
 .card__description {
 	font-size: 14px;
 	opacity: 0;
@@ -158,6 +163,7 @@ main div:nth-child(2) {
 	animation: none;
 	text-decoration: none;
 }
+
 .card:hover .card__description {
 	opacity: 1;
 	translate: 0;
