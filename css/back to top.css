@@ -1,0 +1,27 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.backToTop {
+	background-color: #E5F4DF;
+	position: fixed;
+	right: 3vw;
+	bottom: 3vh;
+	font-size: 4rem;
+	border-radius: 100%;
+	transition: 1s;
+	cursor: pointer;
+}
+
+.backToTop a {
+	text-decoration: none;
+	display: flex;
+	color: black;
+}
+
+.backToTop:hover {
+	transition: 1s;
+	background-color: #98DA3A;
+	box-shadow: 0 0 100px 1px #98DA3A;
+	bottom: 4vh;
+}

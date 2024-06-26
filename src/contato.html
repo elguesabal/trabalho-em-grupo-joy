@@ -7,9 +7,16 @@
 	<link rel="stylesheet" href="../css/cabecalho.css"> <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
 	<link rel="stylesheet" href="../css/rodape.css"> <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
+	<link rel="stylesheet" href="../css/back to top.css">
 	<link rel="stylesheet" href="../css/contato.css"> <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
+
+
+
+	<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
 </head>
 <body>
+	<div class="backToTop"><a href="#"><i class="ri-arrow-up-circle-line"></i></a></div>
+
 	<header>
 		<h1>Nome do Site</h1>
 		<nav>
@@ -57,60 +64,63 @@
 					<input type="email" id="email" name="email" placeholder="Seu email..." required>
 					<label for="mensagem">Mensagem:</label>
 					<textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..." required></textarea>
-					<input type="submit" value="Enviar">
+					<button type="submit" class="button">
+						<span>Enter</span>
+						<i class="ri-check-line"></i>
+					</button>
 				</form>
 			</div>
 			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Logo do site">
+				<img src="../img/logo.jpg" alt="Logo do site">
 			</figure>
 		</div>
 		<div>
-			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Foto do desenvolvedor"/>
-				<figcaption>
-					<h2>André</h2>
-					<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/Zauth22" target="_blank">GitHub</a>
+			<figure class="card">
+				<img src="" alt="Foto do desenvolvedor" class="card__image"/>
+				<figcaption class="card__body">
+					<h2 class="card__title">André</h2>
+					<a class="card__description" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+					<a class="card__description" href="https://github.com/Zauth22" target="_blank">GitHub</a>
 				</figcaption>
 			</figure>
-			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Foto do desenvolvedor"/>
-				<figcaption>
-					<h2>Jonnas</h2>
-					<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/" target="_blank">GitHub</a>
+			<figure class="card">
+				<img src="" alt="Foto do desenvolvedor" class="card__image"/>
+				<figcaption class="card__body">
+					<h2 class="card__title">Jonnas</h2>
+					<a class="card__description" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+					<a class="card__description" href="https://github.com/" target="_blank">GitHub</a>
 				</figcaption>
 			</figure>
-			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Foto do desenvolvedor"/>
-				<figcaption>
-					<h2>José</h2>
-					<a href="https://www.linkedin.com/in/jos%C3%A9-antonio-b14160240/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/elguesabal" target="_blank">GitHub</a>
+			<figure class="card">
+				<img src="https://media.licdn.com/dms/image/D4D03AQE0ANrEe4uO7w/profile-displayphoto-shrink_400_400/0/1665860003773?e=1724889600&v=beta&t=hbYv1pk0BJX53wG6lyNMz9gCNqaxMLBV61tblQRpS-Q" alt="Foto do desenvolvedor" class="card__image"/>
+				<figcaption class="card__body">
+					<h2 class="card__title">José</h2>
+					<a class="card__description" href="https://www.linkedin.com/in/jos%C3%A9-antonio-b14160240/" target="_blank">LinkedIn</a>
+					<a class="card__description" href="https://github.com/elguesabal" target="_blank">GitHub</a>
 				</figcaption>
 			</figure>
-			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Foto do desenvolvedor"/>
-				<figcaption>
-					<h2>Leandro</h2>
-					<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/Git-LeAmaral" target="_blank">GitHub</a>
+			<figure class="card">
+				<img src="" alt="Foto do desenvolvedor" class="card__image"/>
+				<figcaption class="card__body">
+					<h2 class="card__title">Leandro</h2>
+					<a class="card__description" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+					<a class="card__description" href="https://github.com/Git-LeAmaral" target="_blank">GitHub</a>
 				</figcaption>
 			</figure>
-			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Foto do desenvolvedor"/>
-				<figcaption>
-					<h2>Paloma</h2>
-					<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/PalomaMuniz777" target="_blank">GitHub</a>
+			<figure class="card">
+				<img src="" alt="Foto do desenvolvedor" class="card__image"/>
+				<figcaption class="card__body">
+					<h2 class="card__title">Paloma</h2>
+					<a class="card__description" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+					<a class="card__description" href="https://github.com/PalomaMuniz777" target="_blank">GitHub</a>
 				</figcaption>
 			</figure>
-			<figure>
-				<img src="https://source.unsplash.com/500x500" alt="Foto do desenvolvedor"/>
-				<figcaption>
-					<h2>Pedro</h2>
-					<a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
-					<a href="https://github.com/PedFelGS" target="_blank">GitHub</a>
+			<figure class="card">
+				<img src="" alt="Foto do desenvolvedor" class="card__image"/>
+				<figcaption class="card__body">
+					<h2 class="card__title">Pedro</h2>
+					<a class="card__description" href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+					<a class="card__description" href="https://github.com/PedFelGS" target="_blank">GitHub</a>
 				</figcaption>
 			</figure>			
 		</div>
