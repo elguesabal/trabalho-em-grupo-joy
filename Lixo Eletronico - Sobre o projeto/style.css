@@ -1,0 +1,215 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.left-header {
+    display: flex;
+    align-items: center;
+}
+
+.left-header .logo {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.right-header {
+    display: flex;
+    align-items: center;
+}
+
+.right-header .login {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.right-header .donate-button {
+    padding: 10px 20px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.right-header .donate-button:hover {
+    background-color: white;
+    color: black;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+    background-color: white;
+    color: black;
+}
+
+main section {
+    margin-bottom: 40px;
+}
+
+.mission-section {
+    text-align: left;
+}
+
+.mission-section h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.mission-section .image-container {
+    display: flex;
+    justify-content: center;
+    background-color: #00ff00;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.mission-section .mission-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.centered-content {
+    text-align: center;
+}
+
+.centered-content .title {
+    font-size: 2.5em;
+    margin-top: 20px;
+}
+
+.centered-content .subheading-divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0 20px 0;
+}
+
+.centered-content .description {
+    font-size: 1.8em;
+}
+
+.values-section {
+    background-color: #f9f9f9;
+    padding: 40px 20px;
+}
+
+.values-section h2 {
+    text-align: left;
+    margin-bottom: 10px;
+    color: black;
+    font-size: 2.5em;
+}
+
+.divider {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 10px 0 40px 0;
+}
+
+.values-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.value-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 50px; 
+    margin: 20px; 
+    flex: 1;
+    max-width: 32%; 
+    display: flex;
+    align-items: flex-start; 
+}
+
+.value-icon {
+    width: 80px; 
+    height: auto;
+    margin-right: 40px; 
+}
+
+.value-content {
+    flex: 1; 
+}
+
+.value-content h3 {
+    color: #333;
+    margin-bottom: 30px; 
+    font-size: 2em; 
+}
+
+.value-content p {
+    color: #666;
+    font-size: 1.8em; 
+}
+
+footer {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+}
+
+footer address ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer address ul li {
+    margin: 0 10px;
+}
+
+footer address ul li a img {
+    width: 24px;
+    height: 24px;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #333;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
