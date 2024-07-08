@@ -11,6 +11,7 @@ html {
 	border-radius: 100%;
 	transition: 1s;
 	cursor: pointer;
+	z-index: 10000;
 }
 
 .backToTop a {
