@@ -13,6 +13,10 @@
 
 */
 
+.social-media__item {
+  cursor: pointer;
+}
+
 .header {
   margin: 2.25rem 1.5625rem;
 }
@@ -24,7 +28,7 @@
 
 .header__title {
   margin-right: 0.5rem;
-  font-family: Inter;
+  font-family: Arial;
 }
 
 .header__separator {
