@@ -30,7 +30,6 @@ header h1::before {
   vertical-align: middle;
   width: 2rem;
   height: 2rem;
-  /* background-image: url(/trabalho-em-grupo-joy/img/logo\SVG.svg); */
   background-image: url(../img/logo\ SVG.svg);
   background-size: cover;
   margin-right: 0.5rem;
