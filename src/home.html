@@ -1,84 +1,143 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Projeto RECOM</title>
-</head>
-<body>
-  <header>
-		<h1>Nome do Site</h1>
-		<nav>
-			<ul>
-				<li><a href="./home.html">Home</a></li>
-				<li><a href="./sobre.html">Sobre</a></li>
-				<li><a href="./galeria.html">Galeria</a></li>
-				<li><a href="./impacto social.html">Impacto social</a></li>
-				<li><a href="./como doar.html">Como doar</a></li>
-				<li><a href="./contato.html">Contato</a></li>
-			</ul>
-		</nav>	
-	</header>
-<h1>Bem-vindo ao nosso portal de reciclagem de lixo eletrônico!</h1>
-	<p>Promovendo a responsabilidade socioambiental. Nosso objetivo é claro recolher, reciclar, recondicionar e doar equipamentos.</p>
-<button>Doe Agora</button>
-	<p>Transformamos lixo eletrônico em oportunidades para quem mais precisa!</p>
-<main>
-  <section>
-  	<h5>NOSSA INSTITUIÇÃO</h5>
-    <h2>Transformando Vidas com Tecnologia desde 2013</h2>
-    <p>
-      Há mais de uma década, o RECOM tem sido um farol de esperança, impulsionando a mudança através da tecnologia e da solidariedade.
-    </p>
-    <p>
-      Fundada em março de 2013, na icônica FACAPE, somos uma Associação Civil sem Fins Lucrativos comprometida com a inclusão digital e a sustentabilidade ambiental.
-    </p>
-    <button>Doe Agora</button>
-  </section>
-  
-  <section>
-<h5>NOSSA MISSÃO</h5>
-    <h2>Sustentabilidade e Inclusão para um futuro melhor</h2>
-    <p>
-      Concebido pela renomada Faculdade de Ciências Aplicadas e Sociais de Petrolina (Facape), nosso propósito é claro: impactar positivamente a sociedade e o meio ambiente.
-    </p>
-    <p>
-      Guiados pela necessidade urgente de inclusão digital e pela imperativa sustentabilidade ambiental, nós capacitamos indivíduos e comunidades, promovendo um futuro mais justo e equitativo.
-    </p>
-  </section>
-  
-  <section>
-<h5>NOSSA COMUNIDADE</h5>
-    <h2>Unindo-se para transformação e inclusão digital</h2>
-    <p>
-      O RECOM não é apenas um projeto; é um movimento de mudança. Aqui, voluntários e estudantes se unem em um só propósito: capacitar e transformar.
-    </p>
-    <p>
-      Mais do que recondicionar computadores, estamos construindo um legado de oportunidades e esperança. Cada gesto solidário é uma gota no oceano da mudança, onde o descarte se torna descoberta, e a tecnologia se torna um instrumento de igualdade.
-    </p>
-  </section>
-  
-  <section>
-<h5>NOSSA EQUIPE</h5>
-    <h2>O Pilar da Mudança Digital</h2>
-    <p>
-      A essência do RECOM reside em nossa equipe, uma força dedicada e apaixonada que impulsiona nossa missão adiante. Desde coordenadores até voluntários, cada membro é uma peça fundamental no quebra-cabeça da inclusão digital e sustentabilidade.
-    </p>
-    <p>
-      Com habilidade técnica e um compromisso inabalável, eles não apenas recondicionam computadores, mas também reacendem esperanças e transformam vidas. Juntos, somos mais do que uma equipe; somos agentes de mudança, moldando um mundo mais justo e conectado.
-    </p>
-  </section>
 
-</main>
-	<footer>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/trabalho-em-grupo-joy/css/home.css" />
+    <link rel="stylesheet" href="/trabalho-em-grupo-joy/css/cabecalho.css" />
+    <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
+    <link rel="stylesheet" href="/trabalho-em-grupo-joy/css/rodape.css" />
+    <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet"> <!-- AGORA O ALVINHO NAO VAI FICAR BRAVO -->
+    <link rel="stylesheet" href="/trabalho-em-grupo-joy/css/back to top.css" />
+</head>
+
+<body>
+    <div class="backToTop">
+      <a href="#"><i class="ri-arrow-up-circle-line"> </i></a>
+    </div>
+    <header>
+        <h1>RECOM</h1>
+        <nav>
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./sobre.html">Sobre</a></li>
+                <li><a href="./galeria.html">Galeria</a></li>
+                <li><a href="./blog.html">Impacto social</a></li>
+                <li><a href="./como doar.html">Como doar</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="main__content">
+            <section class="intro">
+                <div class="intro__left">
+                    <div class="intro__stats">
+                        <span class="intro__stats-item">+40 colaboradores</span>
+                        <span class="intro__stats-item">+1000 computadores doados</span>
+                    </div>
+                    <div class="intro__text">
+                        <h1 class="intro__title">Bem-vindo ao nosso portal de reciclagem de lixo eletrônico!</h1>
+                        <p class="intro__description">Promovendo a responsabilidade socioambiental. Nosso objetivo é claro: recolher, reciclar, recondicionar e doar equipamentos.</p>
+                        <button class="intro__button">Ver mais</button>
+                    </div>
+                </div>
+                <div class="intro__right">
+                    <div class="gradientblur-parent">
+                        <div class="gradientblur"></div>
+                        <div class="gradientblur1"></div>
+                    </div>
+                    <div class="intro__image-container">
+                        <img src="/trabalho-em-grupo-joy/img/imgHomeIntro.png" alt="Imagem" class="intro__image" />
+                    </div>
+                </div>
+            </section>
+            <div class="hero__message">
+                <div class="gradient-container">
+                    <div class="gradientblur2"></div>
+                    <div class="gradientblur3"></div>
+                </div>
+                <h3>
+                    Transformamos lixo eletrônico em oportunidades para quem mais precisa!
+                </h3>
+            </div>
+            <section class="mission">
+                <div class="section__wrapper">
+                    <div class="mission__image-container">
+                        <img src="/trabalho-em-grupo-joy/img/imgHome1.png" alt="Imagem" class="mission__image" />
+                    </div>
+                    <div class="mission__content section--content section--right">
+                        <span class="mission__label">NOSSA INSTITUIÇÃO</span>
+                        <h2 class="mission__title">Transformando Vidas com Tecnologia <span class="mission__title-highlight">desde 2013</span></h2>
+                        <div class="mission__text section--text">
+                            <p class="mission__paragraph">Há mais de uma década, o RECOM tem sido um farol de esperança, impulsionando a mudança através da tecnologia e da solidariedade.</p>
+                            <p class="mission__paragraph">Fundada em março de 2013, na icônica FACAPE, somos uma Associação Civil sem Fins Lucrativos comprometida com a inclusão digital e a sustentabilidade ambiental.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="sustainability">
+                <div class="section__wrapper">
+                    <div class="sustainability__content section--content section--left">
+                        <span class="sustainability__label">NOSSA MISSÃO</span>
+                        <h2 class="sustainability__title">Sustentabilidade e Inclusão para um <span class="sustainability__title-highlight">futuro melhor</span></h2>
+                        <div class="sustainability__text section--text">
+                            <p class="sustainability__paragraph">Concebido pela renomada Faculdade de Ciências Aplicadas e Sociais de Petrolina (Facape), nosso propósito é claro: impactar positivamente a sociedade e o meio ambiente.</p>
+                            <p class="sustainability__paragraph">Guiados pela necessidade urgente de inclusão digital e pela imperativa sustentabilidade ambiental, nós capacitamos indivíduos e comunidades, promovendo um futuro mais justo e equitativo.</p>
+                        </div>
+                    </div>
+                    <div class="sustainability__image-container">
+                        <img src="/trabalho-em-grupo-joy/img/imgHome2.png" alt="Imagem" class="sustainability__image" />
+                    </div>
+                </div>
+            </section>
+            <section class="community">
+                <div class="section__wrapper">
+                    <div class="community__image-container">
+                        <img src="/trabalho-em-grupo-joy/img/imgHome3.png"Imagem" class="community__image" />
+                    </div>
+                    <div class="community__content section--content section--right">
+                        <span class="community__label">NOSSA COMUNIDADE</span>
+                        <h2 class="community__title">Unindo-se para <span class="community__title-highlight">transformação e inclusão digital</span></h2>
+                        <div class="community__text section--text">
+                            <p class="community__paragraph">O RECOM não é apenas um projeto; é um movimento de mudança. Aqui, voluntários e estudantes se unem em um só propósito: capacitar e transformar.</p>
+                            <p class="community__paragraph">Mais do que recondicionar computadores, estamos construindo um legado de oportunidades e esperança. Cada gesto solidário é uma gota no oceano da mudança, onde o descarte se torna descoberta, e a tecnologia se torna um instrumento de igualdade.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="team">
+                <div class="section__wrapper">
+                    <div class="team__content section--content section--left">
+                        <span class="team__label">NOSSA EQUIPE</span>
+                        <h2 class="team__title">O Pilar da <span class="team__title-highlight">Mudança Digital</span></h2>
+                        <div class="team__text section--text">
+                            <p class="team__paragraph">A essência do RECOM reside em nossa equipe, uma força dedicada e apaixonada que impulsiona nossa missão adiante. Desde coordenadores até voluntários, cada membro é uma peça fundamental no quebra-cabeça da inclusão digital e sustentabilidade.</p>
+                            <p class="team__paragraph">Com habilidade técnica e um compromisso inabalável, eles não apenas recondicionam computadores, mas também reacendem esperanças e transformam vidas. Juntos, somos mais do que uma equipe; somos agentes de mudança, moldando um mundo mais justo e conectado.</p>
+                        </div>
+                    </div>
+                    <div class="team__image-container">
+                        <img src="/trabalho-em-grupo-joy/img/imgHome4.png" alt="Imagem" class="team__image" />
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
 		<address>
 			<h4>Follow us on</h4>
 			<div></div>
-			<ul>
-				<li><a href="https://www.instagram.com/"><img src="../img/instagram.png" alt="Icone do Instagram"></a></li>
-				<li><a href="https://www.facebook.com/"><img src="../img/facebook.png" alt="Icone do Facebook"></i></a></li>
-			  	<li><a href="https://www.youtube.com/"><img src="../img/youtube.png" alt="Icone do YouTube"></i></a></li>
-				<li><a href="https://www.tiktok.com/pt-BR/"><img src="../img/tiktok.png" alt="Icone do TikTok"></a></li>
+			<ul class="icons">
+				<li><a href="https://www.instagram.com/" class="icon icon--instagram" target="_blank"><i class="ri-instagram-line"></i></a></li>
+				<li><a href="https://www.tiktok.com/pt-BR/" class="icon icon--youtube" target="_blank"><i class="ri-youtube-line"></i></a></li>
+				<li><a href="https://www.linkedin.com/" class="icon icon--linkedin" target="_blank"><i class="ri-linkedin-line"></i></a></li>
+				<li><a href="https://github.com/elguesabal/trabalho-em-grupo-joy" class="icon icon--github" target="_blank"><i class="ri-github-line"></i></a></li>
 			</ul>
 		</address>
 		<div>
@@ -88,5 +147,7 @@
 			</div>
 		</div>
 	</footer>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
