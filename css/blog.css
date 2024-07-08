@@ -1,0 +1,288 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+/*
+
+
+
+*/
+
+.header {
+  margin: 2.25rem 1.5625rem;
+}
+
+.header__titles {
+  display: flex;
+  align-items: center;
+}
+
+.header__title {
+  margin-right: 0.5rem;
+  font-family: Inter;
+}
+
+.header__separator {
+  margin: 0 0.5rem;
+}
+
+.header__title--main,
+.header__title--sub {
+  font-weight: bold;
+}
+
+/*
+
+
+
+*/
+
+.intro {
+  position: relative;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 1.5313rem;
+  border-radius: 0.5rem;
+  background: rgba(15, 33, 51, 0.5);
+  background-image: url(/trabalho-em-grupo-joy/img/imgBlog.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.intro::before {
+  border-radius: 0.5rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.intro__title {
+  margin-bottom: 0.7188rem;
+  max-width: 38.375rem;
+}
+
+.intro__title h1 {
+  color: #fafafa;
+  font-family: Arial;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.5rem;
+  letter-spacing: 0.0063rem;
+  position: relative;
+}
+
+.intro__subtitle {
+  margin-bottom: 12.5rem;
+}
+
+.intro__subtitle p {
+  color: #fafafa;
+  font-family: Arial;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.intro__authors {
+  display: flex;
+  align-items: center;
+}
+
+/*
+
+
+
+*/
+
+.authors__profile {
+  display: flex;
+  align-items: center;
+}
+
+.authors__image {
+}
+
+.authors__description {
+}
+
+.authors__description h5 {
+  color: #fafafa;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.authors__description p {
+  color: #fafafa;
+  font-family: Arial;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  position: relative;
+}
+
+.authors__separator {
+  margin: 0 2.5rem;
+}
+
+/*
+
+
+*/
+
+.main__content {
+  display: flex;
+  margin: 0px 1.5625rem;
+}
+
+body {
+    
+}
+
+/*
+
+
+*/
+
+.article {
+  padding: 2rem;
+}
+
+.article__header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.0625rem solid rgba(15, 33, 51, 0.2);
+}
+
+.article__header p {
+  margin-bottom: 1.0313rem;
+  color: #0f2133;
+  font-family: Arial;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
+
+.article__header .article__loading {
+  width: 12rem;
+  height: 0.5rem;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  background: rgba(15, 33, 51, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.article__body {
+  margin-bottom: 2rem;
+}
+
+.article__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.article__item {
+  margin-bottom: 1rem;
+  color: #0f213380;
+  font-family: Arial;
+  font-size: 0.875rem;
+  font-weight: bold;
+  line-height: 1.25rem;
+}
+
+.article__footer {
+  border-top: 0.0625rem solid rgba(15, 33, 51, 0.2);
+  text-align: center;
+  color: #0f2133;
+  font-family: Arial;
+  font-size: 0.875rem;
+  font-weight: 700;
+  line-height: 1.3125rem;
+  text-transform: uppercase;
+}
+
+.article__footer p {
+  margin-top: 1.4375rem;
+  margin-bottom: 1.0313rem;
+}
+
+.article__social-media {
+}
+
+/*
+
+
+*/
+
+.social-media {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.social-media__item {
+  border-radius: 3.125rem;
+  background: #0f2133;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.375rem;
+}
+
+/*
+
+
+*/
+
+.content {
+  margin-left: 3.75rem;
+}
+
+.content__paragraph {
+  margin-bottom: 1.7188rem;
+  color: #0f2133;
+  font-family: Arial;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.8125rem;
+}
+
+.content__heading {
+  font-family: Arial;
+  color: #0f2133;
+  line-height: 3.5rem;
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin-bottom: 2.0313rem;
+}
+
+.content__item {
+  margin-bottom: 1.7188rem;
+  color: #0f2133;
+  font-family: Arial;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 1.8125rem;
+}
+
+.article__item a {
+    text-decoration: none;
+    color: #333; /* Cor dos links */
+    transition: color 0.3s ease; /* Transição suave da cor */
+}
+
+.article__item a:hover {
+    color: #007bff; /* Cor do link ao passar o mouse */
+}
