@@ -1,0 +1,410 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+.intro,
+.hero__message {
+  background: #112;
+}
+
+.intro {
+  display: flex;
+  padding: 1.812rem 1.5rem 1.537rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.intro__stats span {
+  font-family: Inter;
+  margin-right: 0.5rem;
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 0.375rem;
+  padding: 0.4688rem 0.8125rem 0.5313rem;
+  border-radius: 1.25rem;
+}
+
+.intro__text {
+  margin-top: 2.1875rem;
+}
+
+.intro__text h1 {
+  font-size: 2.875rem;
+  font-weight: bold;
+  line-height: 3.5rem;
+  margin-bottom: 1.5625rem;
+  color: #fff;
+  font-family: Inter;
+  max-width: 29.8125rem;
+}
+
+.intro__text p {
+  margin-bottom: 1.25rem;
+  max-width: 28.8125rem;
+  font-size: 1.1875rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: #a9a9b7;
+  font-family: Inter;
+}
+
+.intro__text button {
+  border-radius: 0.5rem;
+  background: #009efe;
+  padding: 0.875rem 1.175rem 0.875rem 1.3125rem;
+  height: 3rem;
+  font-size: 0.9453rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+.intro__right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro__right img {
+  width: 36rem;
+  position: relative;
+  max-height: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+
+  max-width: 100%;
+  z-index: 2;
+
+  height: auto;
+
+  right: 0;
+
+  width: 36rem;
+  height: auto;
+  max-height: 100%;
+  overflow: hidden;
+  object-fit: cover;
+  display: block;
+  z-index: 3;
+}
+
+.gradientblur,
+.gradientblur1 {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.gradientblur-parent {
+  height: 27.9rem;
+  width: 33.063rem;
+  position: relative;
+  min-width: 33.063rem;
+  max-width: 100%;
+}
+
+.gradientblur {
+  top: 7.393rem;
+  left: 33.063rem;
+  filter: blur(140.96px);
+  border-radius: 598.77px;
+  background: linear-gradient(
+    4.17deg,
+    rgba(30, 64, 112, 0.3) 27.5%,
+    rgba(0, 203, 254, 0.3)
+  );
+  width: 14.381rem;
+  height: 24.219rem;
+  transform: rotate(100deg);
+}
+
+.gradientblur1 {
+  top: 0;
+  left: 13.771rem;
+  filter: blur(152.09px);
+  border-radius: 587.62px;
+  background: linear-gradient(
+    194.35deg,
+    rgba(0, 203, 46, 0.3) 50.02%,
+    rgba(119, 231, 105, 0.3) 98.88%
+  );
+  width: 19.981rem;
+  height: 19.475rem;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.hero__message {
+  border-top: 5px dotted transparent;
+  border-image: linear-gradient(
+      194.35deg,
+      rgba(30, 64, 112, 0.3) 27.5%,
+      rgba(119, 231, 105, 0.3) 65.88%
+    )
+    2;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  align-self: stretch;
+  height: 6.75rem;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  text-align: center;
+  font-size: 1.938rem;
+  color: var(--color-white);
+  font-family: var(--font-inter);
+}
+
+.gradient-container {
+  position: absolute;
+  top: -20.187rem;
+  left: 4.875rem;
+  width: 72.638rem;
+  height: 26.938rem;
+}
+
+.hero__message h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.9375rem;
+  font-weight: 700;
+  line-height: 2.75rem;
+  max-width: 51.875rem;
+  color: #fff;
+  font-family: Inter;
+}
+
+.gradientblur2 {
+  top: -0.001rem;
+  left: 25.311rem;
+  filter: blur(152.09px);
+  border-radius: 587.62px;
+  background: linear-gradient(
+    194.35deg,
+    rgba(0, 203, 46, 0.3) 50.02%,
+    rgba(119, 231, 105, 0.3) 98.88%
+  );
+  width: 36.725rem;
+  height: 35.794rem;
+  transform: rotate(45deg);
+}
+
+.gradientblur3 {
+  top: 47.084rem;
+  left: 44.467rem;
+  filter: blur(140.96px);
+  border-radius: 598.77px;
+  background: linear-gradient(
+    4.17deg,
+    rgba(30, 64, 112, 0.3) 27.5%,
+    rgba(0, 203, 254, 0.3)
+  );
+  width: 22.225rem;
+  height: 37.425rem;
+  transform: rotate(-131.2deg);
+  z-index: 1;
+}
+
+main {
+  background-color: #f6f8fa;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+}
+
+.section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7.5rem;
+}
+
+.section__wrapper .section--content {
+  max-width: 36.9375rem;
+}
+
+.section__wrapper .section--left {
+  margin-right: 2.875rem;
+}
+
+.section__wrapper .section--right {
+  margin-left: 2.875rem;
+}
+
+.NossaInstituicao,
+.NossaMissao,
+.NossaComunidade {
+  margin-bottom: 19.375rem;
+}
+
+.section__wrapper .section--content span {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  font-family: Raleway;
+  line-height: 1.3125rem; /* 150% */
+  color: #656d76;
+}
+
+.section__wrapper .section--content h2 {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.section__wrapper .section--content h2 span {
+  color: #77e769;
+  font-size: 2.5rem;
+}
+
+.section__wrapper .section--content .section--text {
+  font-size: 1.1875rem;
+  color: #656d76;
+  line-height: 1.7813rem;
+}
+
+.section__wrapper .section--content .section--text p:nth-child(1) {
+  margin-bottom: 1rem;
+}
+
+.sustainability .section__wrapper {
+  flex-wrap: wrap-reverse;
+}
+
+.community .section__wrapper {
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 760px) {
+
+
+    .section__wrapper, section, main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: center;
+        
+    }
+
+  .section__wrapper .block-text {
+    margin-bottom: 4.375rem;
+  }
+
+  .sustainability,
+  .mission,
+  .community {
+    margin: 0;
+    display: flex;
+  }
+
+  .section__wrapper {
+    flex-wrap: wrap;
+    margin-top: 4.375rem;
+  }
+
+  .team .section__wrapper {
+    flex-wrap: wrap-reverse;
+  }
+
+  .section__wrapper .section-right {
+    margin-left: 0;
+  }
+
+  .section__wrapper .section-left {
+    margin-right: 0rem;
+  }
+
+  .section__wrapper .block-conteudo {
+    width: initial;
+  }
+
+  .hero__message img {
+    display: none;
+  }
+
+  nav {
+    margin: 0;
+    display: none;
+  }
+
+  header {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .intro,
+  .hero__message,
+  section {
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+  }
+
+  .content h1,
+  .content p {
+    max-width: initial;
+  }
+
+  .intro .intro__right {
+    display: none;
+  }
+}
+
+.gradientblur-parent {
+  position: absolute;
+  left: 700px;
+  height: 27.9rem;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gradientblur,
+.gradientblur1,
+.gradientblur2,
+.gradientblur3 {
+  position: absolute;
+  transform-origin: 0 0;
+}
+
+.gradientblur {
+}
+
+@media screen and (max-width: 825px) {
+  .content h1 {
+    font-size: 1.75rem;
+    line-height: 2.125rem;
+  }
+
+  .hero__message{
+    font-size: 1.188rem;
+    line-height: 1.625rem;
+  }
+}
+
+@media screen and (max-width: 1425px) {
+  .content h1 {
+    font-size: 2.313rem;
+    line-height: 2.813rem;
+  }
+
+  .hero__message  h3 {
+    font-size: 1.563rem;
+    line-height: 2.188rem;
+  }
+}
