@@ -1,53 +1,85 @@
+body {
+  margin: 0px !important;
+}
+
 header {
-	background-color: #f8f9fa;
-	padding: 10px 20px;
-	text-align: center;
-	border-bottom: 1px solid #ddd;
+  margin: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0rem 2.5rem;
+  text-align: center;
+  height: 4.375rem;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.888) 0,
+    rgba(0, 0, 0, 0.916) 100%
+  );
 }
 
 header h1 {
-	width: 50vw;
+  font-family: Inter;
+  color: white;
+  font-size: 1.45rem;
+  font-weight: 400;
+}
+
+header h1::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  background-image: url(/trabalho-em-grupo-joy/img/logo\ SVG.svg);
+  background-size: cover;
+  margin-right: 0.5rem;
+}
+
+header nav {
+  color: white;
+  font-family: Inter;
+  font-size: 0.9375rem;
 }
 
 header nav ul {
-	list-style: none;
-	display: flex;
-	justify-content: end;
-	gap: 40px;
+  list-style: none;
+  display: flex;
+  justify-content: end;
+  gap: 1.875rem;
 }
 
 header nav ul li a {
-	position: relative;
-	display: inline-block;
-	text-decoration: none;
-	color: #000000;
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
 }
 
 header nav ul li a::before,
 header nav ul li a::after {
-	content: '';
-	position: absolute;
-	left: 0;
-	width: 100%;
-	height: 2px;
-	background-color: #97DB3A;
-	transform: scaleX(0);
-	transition: transform 0.25s;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0.125rem;
+  background-color: #97db3a;
+  transform: scaleX(0);
+  transition: transform 0.25s;
 }
 
 header nav ul li a::before {
-	top: -3px;
-	transform-origin: left;
+  top: -0.1875rem;
+  transform-origin: left;
 }
 
 header nav ul li a::after {
-	bottom: -3px;
-	transform-origin: right;
+  bottom: -0.1875rem;
+  transform-origin: right;
 }
 
 header nav ul li a:hover::before,
 header nav ul li a:hover::after,
 .active::before,
 .active::after {
-	transform: scaleX(1);
+  transform: scaleX(1);
 }
