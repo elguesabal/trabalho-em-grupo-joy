@@ -7,14 +7,15 @@
 	<link rel="stylesheet" href="../css/cabecalho.css">
 	<link rel="stylesheet" href="../css/rodape.css">
 	<link rel="stylesheet" href="../css/back to top.css">
-	<script type="module" src="../javascript/add_componentes.js" defer></script>
 	<link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 	<link rel="stylesheet" href="../css/contato.css">
+	<script type="module" src="../javascript/add_componentes.js" defer></script> <!-- ADICIONAR ESSA LINHA PARA FUNCIONAR CABECALHO E RODAPE -->
+	<script src="../javascript/formulario.js" defer></script>
 </head>
 <body>
 	<div class="backToTop"><a href="#"><i class="ri-arrow-up-circle-line"></i></a></div>
 
-	<header id="header"></header>
+	<header id="header"></header> <!-- ADICIONAR ESSA LINHA PARA FUNCIONAR CABECALHO (E REMOVER O ANTIGO CABECALHO) -->
 
 	<main>
 		<div>
@@ -43,13 +44,17 @@
 						<li><a href="https://www.tiktok.com/pt-BR/" class="icon icon--github" target="_blank"><i class="ri-github-line"></i></a></li>
 					</ul>
 				</section>
-				<form action="https://api-email-joy.vercel.app/mensagem" method="post">
+				<!-- <form action="https://api-email-joy.vercel.app/mensagem" method="post"> -->
+				<form id="form">
 					<h2>Entre em Contato</h2>
 					<label for="email">Email:</label>
-					<input type="email" id="email" name="email" placeholder="Seu email..." required>
+					<!-- <input type="email" id="email" name="email" placeholder="Seu email..." required> -->
+					<input type="email" id="email" name="email" placeholder="Seu email...">
 					<label for="mensagem">Mensagem:</label>
-					<textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..." required></textarea>
-					<button type="submit" class="button">
+					<!-- <textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..." required></textarea> -->
+					<textarea id="mensagem" name="mensagem" placeholder="Sua mensagem..."></textarea>
+					<!-- <button type="submit" class="button"> -->
+					<button id="submit" class="button">
 						<span>Enter</span>
 						<i class="ri-check-line"></i>
 					</button>
@@ -111,6 +116,6 @@
 		</div>
 	</main>
 
-	<footer id="footer"></footer>
+	<footer id="footer"></footer> <!-- ADICIONAR ESSA LINHA PARA FUNCIONAR RODAPE (E REMOVER O ANTIGO RODAPE) -->
 </body>
 </html>
