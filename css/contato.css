@@ -49,20 +49,30 @@ main div:nth-child(1) div form {
 main div:nth-child(1) div form #email {
 	width: 100%;
 	padding: 10px;
-	margin-bottom: 15px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 }
 
+#erroEmail {
+	color: red;
+	display: flex;
+	margin-bottom: 15px;
+}
+
 main div:nth-child(1) div form textarea {
 	width: 100%;
 	padding: 10px;
-	margin-bottom: 15px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
 	height: 150px;
+}
+
+#erroMensagem {
+	color: red;
+	display: flex;
+	margin-bottom: 15px;
 }
 
 .button {
