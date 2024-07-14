@@ -5,7 +5,7 @@ function validarInput(email, mensagem) {
 	return 0;
 }
 
-function enviarEmail(url, email, mensagem) {
+function enviarEmail(url, email, mensagem, botao, icone) {
 const options = {
 	method: 'POST',
 	headers: {
@@ -17,46 +17,57 @@ const options = {
 	})
 };
 
-console.log(options.body)
-
 fetch(url, options)
-	.then(response => {
-		if (!response.ok) {
-			throw new Error('Erro na requisição');
-		}
-		return response.json();
+	.then(res => {
+		if (res.status == 200 || res.status == 500)
+			return res.text();
 	})
-	.then(data => {
-		console.log('Resposta recebida:', data);
+	.then(res => {
+		setTimeout(() => {
+			icone.style.animation = "none";
+			icone.classList.remove("ri-refresh-line");
+			icone.classList.remove("ri-check-line");
+			icone.classList.remove("ri-close-line");
+			botao.disabled = true;
+			if (res == "sucess") {
+				icone.classList.add("ri-check-line");
+			} else if (res == "error") {
+				icone.classList.add("ri-close-line");
+			}
+		}, 2000);
 	})
 	.catch(error => {
 		console.error('Erro:', error);
+		setTimeout(() => {
+			icone.style.animation = "none";
+			icone.classList.remove("ri-refresh-line");
+			icone.classList.add("ri-close-line");
+		}, 2000);
 	});
 }
 
-function animacaoEnviar(response) {
-
-}
-
-
-
-const botao = document.getElementById("submit");
-document.getElementById('form').addEventListener('submit', function(event) {
-	event.preventDefault();
-
+function animacaoEnviar(span, botao, icone) {
+	span.style.display = "none";
 	botao.style.width = "3rem";
 	botao.style.height = "3rem";
 	botao.style.borderRadius = "50%";
+	icone.classList.add("ri-refresh-line");
+	icone.style.animation = "rotacao 2s linear infinite";
+}
 
-
+document.getElementById('form').addEventListener('submit', (event) => {
+	event.preventDefault();
 	const email = document.getElementById("email").value;
 	const mensagem = document.getElementById("mensagem").value;
+	const botao = document.getElementById("submit");
+	const span = document.getElementById("spanSubmit");
+	const icone = document.getElementById("iconeForm");
 
 	if (validarInput(email, mensagem) != 0) {
 		return ;
 	}
 
-	enviarEmail("https://api-email-joy.vercel.app/mensagem", email, mensagem);
+	animacaoEnviar(span, botao, icone);
 
-
+	enviarEmail("https://api-email-joy.vercel.app/mensagem", email, mensagem, botao, icone);
 });

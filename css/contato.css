@@ -78,14 +78,7 @@ main div:nth-child(1) div form textarea {
 	cursor: pointer;
 	transition-property: width, border-radius;
 	transition-duration: 0.25s;
-	transition-delay: 0.5s;
 }
-
-/* .button:focus {
-	width: 3rem;
-	height: 3rem;
-	border-radius: 50%;
-} */
 
 .button > * {
 	position: absolute;
@@ -102,17 +95,16 @@ main div:nth-child(1) div form textarea {
 
 .button i {
 	font-size: 2rem;
-	opacity: 0;
-}
-
-.button:focus span {
-	opacity: 0;
-	transition-delay: 0.15s;
-}
-
-.button:focus i {
-	opacity: 1;
 	transition-delay: 0.75s;
+}
+
+@keyframes rotacao {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
 }
 
 main div:nth-child(1) figure {
