@@ -5,23 +5,29 @@ function validarInput(email, mensagem) {
 	return 0;
 }
 
-function enviarEmail(url, email, mensagem, botao, icone) {
-const options = {
-	method: 'POST',
-	headers: {
-		'Content-Type': 'application/json'
-	},
-	body: JSON.stringify({
-		email: email,
-		mensagem: mensagem
-	})
-};
+function animacaoEnviar(span, botao, icone) {
+	span.style.display = "none";
+	botao.style.width = "3rem";
+	botao.style.height = "3rem";
+	botao.style.borderRadius = "50%";
+	icone.classList.add("ri-refresh-line");
+	icone.style.animation = "rotacao 2s linear infinite";
+}
 
-fetch(url, options)
-	.then(res => {
-		if (res.status == 200 || res.status == 500)
-			return res.text();
-	})
+function enviarEmail(url, email, mensagem, botao, icone) {
+	const options = {
+		method: 'POST',
+		headers: {
+			'Content-Type': 'application/json'
+		},
+		body: JSON.stringify({
+			email: email,
+			mensagem: mensagem
+		})
+	};
+
+	fetch(url, options)
+	.then(res => {return res.text()})
 	.then(res => {
 		setTimeout(() => {
 			icone.style.animation = "none";
@@ -37,22 +43,13 @@ fetch(url, options)
 		}, 2000);
 	})
 	.catch(error => {
-		console.error('Erro:', error);
 		setTimeout(() => {
 			icone.style.animation = "none";
 			icone.classList.remove("ri-refresh-line");
+			icone.classList.remove("ri-check-line");
 			icone.classList.add("ri-close-line");
 		}, 2000);
 	});
-}
-
-function animacaoEnviar(span, botao, icone) {
-	span.style.display = "none";
-	botao.style.width = "3rem";
-	botao.style.height = "3rem";
-	botao.style.borderRadius = "50%";
-	icone.classList.add("ri-refresh-line");
-	icone.style.animation = "rotacao 2s linear infinite";
 }
 
 document.getElementById('form').addEventListener('submit', (event) => {

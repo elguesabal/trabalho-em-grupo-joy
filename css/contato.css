@@ -46,14 +46,13 @@ main div:nth-child(1) div form {
 	margin: 2vw;
 }
 
-main div:nth-child(1) div form input[type="email"] {
+main div:nth-child(1) div form #email {
 	width: 100%;
 	padding: 10px;
 	margin-bottom: 15px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
 	box-sizing: border-box;
-	
 }
 
 main div:nth-child(1) div form textarea {
