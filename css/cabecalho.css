@@ -1,5 +1,21 @@
 body {
   margin: 0px !important;
+  font-family: Arial;
+}
+
+#submit {
+  border-radius: 0.5rem;
+  background: #00cb2fbb;
+  padding: 0.875rem 1.175rem 0.875rem 1.3125rem;
+  height: 3rem;
+  font-size: 0.9453rem;
+  font-weight: bold;
+  color: #fff;
+  cursor: pointer;
+}
+
+figure.card {
+	border-radius: 8px;
 }
 
 header {
